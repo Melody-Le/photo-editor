@@ -1,6 +1,6 @@
-import { ThemeProvider } from "@emotion/react";
 import { Button, Grid } from "@mui/material";
-import { Box, Container, createTheme } from "@mui/system";
+import { Box, Container } from "@mui/system";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import ImageField from "./components/ImageField";
 const theme = createTheme({
   components: {

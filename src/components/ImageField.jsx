@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Box, Grid } from "@mui/material";
+import { Button } from "@mui/material";
 import { height, styled } from "@mui/system";
 
 const StyleBox = styled(Box)({
@@ -48,6 +49,9 @@ function ImageField() {
         accept="image/*"
         hidden
       />
+      <Button disabled={!imageFile} variant="contained" fullWidth>
+        Download Image
+      </Button>
     </Grid>
   );
 }
